@@ -1,10 +1,25 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1272px;
+  box-sizing: border-box;
+}
+
+.top {
+  flex-grow: 1;
+}
+
 .topBlock {
   background-color: #445161;
   max-height: 275px;
   max-width: 1272px;
   display: flex;
-  border: 1px solid #000;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -15,23 +30,27 @@
 
 .topBlock_info_header {
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 374px;
+  max-height: 69px;
   margin-top: 25px;
-  margin-left: 50px;
   margin-bottom: 40px;
+  margin-left: 50px;
 
   font-family: Arial;
   font-size: 60px;
   line-height: 69px;
-  display: flex;
-  align-items: flex-end;
 
   color: #ffffff;
+}
+
+.topBlock_list {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 .item {
   color: rgba(255, 255, 255, 1);
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   margin-bottom: 10px;
@@ -44,30 +63,26 @@
   margin-right: 50px;
   margin-top: 25px;
   margin-bottom: 33px;
-  border: 1px solid #000;
 }
 
 .picture_properties {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .about {
   max-width: 1272px;
   max-height: 340px;
-  border: 1px solid #000;
   display: flex;
   justify-content: space-between;
 }
 
 .about_picture {
   border: 1px solid #000;
-  width: 430px;
-  height: 245px;
-  margin-top: 45px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  max-width: 430px;
+  max-height: 245px;
+  margin: 45px 50px 50px 96px;
 
   background: #445161;
 }
@@ -110,43 +125,50 @@
   display: flex;
   flex-direction: column;
   background: #f5f5f5;
-  border: 1px solid #000;
 }
 
 .advantages_header {
   margin-top: 25px;
-  max-width: 355px;
-  max-height: 36px;
+  margin-bottom: 22px;
   align-self: center;
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 400;
 
   color: rgba(68, 81, 97, 1);
 }
 
 .advantagesTwoBlocks {
+  max-height: 262px;
   display: flex;
+  margin: 0 50px 55px 50px;
 }
 
 .advantages_block {
   max-width: 568px;
+  max-height: 262px;
+}
+
+.advantages_block_left {
+  margin-right: 20px;
 }
 
 .advantagesItem {
-  max-height: 65px;
   max-width: 568px;
+  max-height: 65px;
+  margin-bottom: 33px;
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   list-style-type: none;
 }
 
 .advantagesItemList {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  vertical-align: top;
 }
 
 .screenshots {
@@ -154,12 +176,10 @@
   max-height: 490px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #000;
 }
 
 .screenshots_header {
   margin-top: 25px;
-  margin-bottom: 45px;
   align-self: center;
 
   font-family: Arial, Helvetica, sans-serif;
@@ -172,66 +192,39 @@
 .screenshotsTwoBlocks {
   display: flex;
   justify-content: space-between;
+  margin: 45px 42px 51px 50px;
 }
 
 .screenshots_block {
   max-width: 575px;
   max-height: 333px;
-}
-
-.screenshots_blockLeft {
-  margin-left: 50px;
-  margin-right: 30px;
-}
-
-.screenshots_blockRight {
-  margin-right: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item_container {
   display: flex;
-}
-
-.screenshots_item_topLeft {
-  display: flex;
-  flex-direction: column;
   max-width: 575px;
   max-height: 153px;
-  margin-bottom: 27px;
 }
 
-.screenshots_item_botLeft {
+.screenshots_item {
   display: flex;
   flex-direction: column;
-  max-width: 565px;
-  max-height: 153px;
-}
 
-.screenshots_item_topRight {
-  display: flex;
-  flex-direction: column;
-  max-width: 575px;
-  max-height: 153px;
-  margin-bottom: 27px;
-}
-
-.screenshots_item_botRight {
-  display: flex;
-  flex-direction: column;
-  max-width: 565px;
-  max-height: 153px;
+  margin-left: 14px;
 }
 
 .pic_screenshot {
-  max-width: 202px;
-  max-height: 153px;
+  max-width: 200px;
+  max-height: 150px;
 }
 
 .screenshot_item_name {
   max-width: 340px;
   max-height: 30px;
-  margin-left: 14px;
-
+  margin-bottom: 13px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 30px;
@@ -240,18 +233,11 @@
 }
 
 .screenshot_item_text {
-  margin-left: 14px;
-
+  max-width: 389px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: rgba(51, 51, 51, 1);
-}
-
-.blankSpace {
-  height: 500px;
-  background-color: lightblue;
 }
 
 .reviews {
@@ -259,77 +245,58 @@
   max-height: 400px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #000;
 }
 
 .reviews_header {
+  margin-top: 25px;
   margin-bottom: 29px;
 
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
 
   align-self: center;
+
+  color: rgba(68, 81, 97, 1);
 }
 
 .reviewsTwoBlocks {
   display: flex;
   justify-content: space-between;
-}
-
-.reviews_block {
-  max-width: 575px;
-  max-height: 333px;
+  margin: 29px 50px 42px;
 }
 
 .reviews_blockLeft {
-  margin-left: 50px;
-  margin-right: 20px;
+  max-width: 576px;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews_blockRight {
-  margin-right: 42px;
-}
-
-.item_container {
-  display: flex;
-}
-
-.reviews_item_topLeft {
+  max-width: 576px;
   display: flex;
   flex-direction: column;
+}
+
+.review_container {
+  max-width: 568px;
+  display: flex;
+}
+
+.reviews_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 575px;
   max-height: 153px;
   margin-bottom: 27px;
-}
-
-.reviews_item_botLeft {
-  display: flex;
-  flex-direction: column;
-  max-width: 565px;
-  max-height: 153px;
-}
-
-.reviews_item_topRight {
-  display: flex;
-  flex-direction: column;
-  max-width: 575px;
-  max-height: 153px;
-  margin-bottom: 27px;
-}
-
-.reviews_item_botRight {
-  display: flex;
-  flex-direction: column;
-  max-width: 565px;
-  max-height: 153px;
 }
 
 .pic_reviews {
   max-width: 66px;
   max-height: 66px;
   border-radius: 33px;
+  margin: 2px 30px 55px 4px;
 }
 
 .reviews_item_text {
@@ -347,11 +314,7 @@
 }
 
 .reviewer {
-  left: 100px;
-  top: 100px;
-
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Roboto;
   font-style: italic;
   font-size: 14px;
   line-height: 18px;
@@ -364,6 +327,7 @@
   max-height: 656px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .buyItNow_header {
@@ -371,7 +335,6 @@
   max-height: 36px;
   margin-top: 45px;
   margin-bottom: 26px;
-  align-self: center;
 
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -379,20 +342,20 @@
 }
 
 .buyItNow_offers {
-  max-width: 990px;
   max-height: 500px;
+  max-width: 990px;
+  margin: 26px 0px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
 }
 
 .buyItNow_offers_figure {
-  width: 300px;
+  max-width: 300px;
   background-color: rgba(68, 81, 97, 1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
   border: 1px solid rgba(68, 81, 97, 1);
   border-radius: 5px;
 }
@@ -461,11 +424,6 @@
 }
 
 .contacts_header {
-  width: 120px;
-  height: 36px;
-  left: 576px;
-  top: 25px;
-
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 36px;
@@ -475,21 +433,31 @@
 
 .contacts_TwoBlocks {
   margin-left: 247px;
-  margin-right: 45px;
+  margin-right: 267px;
   display: flex;
 }
 
 .contacts_TwoBlocks_form {
-  width: 503px;
-  height: 357px;
+  max-width: 503px;
+  max-height: 357px;
   display: flex;
   flex-direction: column;
+  margin-right: 45px;
+}
+.input {
+  width: 503px;
+  height: 43px;
+}
+
+.input_textarea {
+  width: 503px;
+  height: 173px;
 }
 
 .contacts_TwoBlocks_form_submit {
+  margin: 18px auto 48px;
   width: 143px;
   height: 43px;
-  align-self: center;
   margin-top: 18px;
 }
 
@@ -505,6 +473,7 @@
 }
 
 .contacts_TwoBlocks_listAndIcons_ul_text {
+  margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -517,10 +486,11 @@
 }
 
 .contacts_TwoBlocks_listAndIcons_icons {
-  margin-left: 45px;
+  display: flex;
 }
 
-.footer_bot {
+.copyR {
+  max-height: 49px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 24px;
