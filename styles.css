@@ -57,7 +57,7 @@
   list-style: none;
 }
 
-.topBlock_picture {
+.topBlock_video {
   max-width: 472px;
   max-height: 217px;
   margin-right: 50px;
@@ -429,6 +429,7 @@
   line-height: 36px;
   margin: 25px auto 43px;
   color: rgba(255, 255, 255, 1);
+  text-decoration: none;
 }
 
 .contacts_TwoBlocks {
@@ -444,6 +445,7 @@
   flex-direction: column;
   margin-right: 45px;
 }
+
 .input {
   width: 503px;
   height: 43px;
@@ -498,4 +500,59 @@
 
   color: #445162;
   text-align: center;
+}
+/*contacts.html*/
+
+.top_menu {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  max-width: 1272px;
+  max-height: 80px;
+  box-sizing: border-box;
+}
+
+.main_nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 25px auto 43px;
+  color: black;
+  text-decoration: none;
+}
+
+.testingFormFeatures {
+  max-width: 1272px;
+
+  background-color: #445162;
+  display: flex;
+  flex-direction: column;
+}
+
+.test_form {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.form_section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 70px;
+}
+
+.legend_style {
+  color: whitesmoke;
+}
+
+.inputHaveToEnter {
+  border: blue 3px solid;
+  border-radius: 5px;
+}
+
+.form_button {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
 }
