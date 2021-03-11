@@ -10,7 +10,13 @@
 
   <body>
     <div class="project">
+
       <div class="top">
+        <nav>
+          <div class="top_menu">
+            <a href="contacts.html" class="main_nav">Вторая страница</a> 
+          </div>
+        </nav>
         <article>
           <div class="topBlock">
             <div class="topBlock_info">
@@ -36,12 +42,10 @@
                 </ul>
               </section>
             </div>
-            <div class="topBlock_picture">
-              <img
-                src="img/pic1.png"
-                alt="dummy pic"
-                class="picture_properties"
-              />
+            <div class="topBlock_video">
+              <video
+                src="img/vid01.mp4" type="video/mp4" preload="auto" controls poster="img/vid01poster.JPG" class="picture_properties">
+              </video>
             </div>
           </div>
         </article>
@@ -385,15 +389,19 @@
       <div class="footer">
         <footer>
           <div class="contacts">
-            <div class="contacts_header">Contacts</div>
+            <div class="contacts_header">Contacts</div> 
             <div class="contacts_TwoBlocks">
               <nav>
                 <form action="#" class="contacts_TwoBlocks_form">
-                  <input type="text" placeholder="Your name:" class="input"/>
-                  <input type="email" placeholder="Your email:" class="input"/>
-                  <textarea
+                  <fieldset>
+                    <input type="text" placeholder="Your name:" required class="input"/>
+                    <input type="email" placeholder="Your email:" required class="input"/>
+                  </fieldset>
+                  <fieldset>
+                    <textarea
                     placeholder="Your message:" class="input_textarea"
                   ></textarea>
+                  </fieldset>
                   <input
                     type="submit"
                     value="SEND"

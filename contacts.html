@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="project">
+      <div class="top">
+        <nav>
+          <div class="top_menu">
+            <a href="index.html" class="main_nav">Главная</a>
+          </div>
+        </nav>
+        <div class="testingFormFeatures">
+          <p class="contacts_header">Тестовая форма</p>
+          <form action="#" class="test_form">
+            <div>
+              <fieldset>
+                <div class="form_section">
+                  <legend class="legend_style">Ваши ФИО</legend>
+                  <label
+                    >Ваше имя<input type="text" placeholder="Иван" required min="2" max="50" class="inputHaveToEnter"
+                  /></label>
+                  <label
+                    >Ваше отчество<input type="text" placeholder="Иванович" class="inputHaveToEnter" min="2" max="50"
+                  /></label>
+                  <label
+                    >Ваша фамилия<input type="text" placeholder="Иванов" class="inputHaveToEnter" min="2" max="50"
+                  /></label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form_section">
+                  <legend class="legend_style">Параметры</legend>
+                  <label
+                    >Ваш рост<input type="number" placeholder="170" min="50" max="250" step="1"
+                  /></label>
+                  <label
+                    >Ваш вес<input type="number" placeholder="70" min="20" max="300" step="1"
+                  /></label>
+                  <label
+                    >Ваш возраст<input
+                      type="number"
+                      placeholder="30" min="0" max="100" step="1"
+                  /></label>
+                  <label id="sex"
+                    >Ваш пол<input type="text" list="dl_sex" placeholder="выберите из списка">
+                    <datalist id="dl_sex">
+                      <option label="мужской" value="Муж.">
+                      <option label="женский" value="Жен.">
+                      <option label="не указано" value="не указано">
+                    </datalist>
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form_section">
+                  <legend class="legend_style">Контакты</legend>
+                  <label
+                    >Ваш адрес<input
+                      type="text"
+                      placeholder="город, улица, дом"
+                  /></label>
+                  <label
+                    >Ваш телефон<input type="tel" placeholder="+79999999999" class="inputHaveToEnter"
+                  /></label>
+                  <label
+                    >Ваш имейл<input
+                      type="email"
+                      placeholder="example@example.com" class="inputHaveToEnter"
+                  /></label>
+                </div>
+              </fieldset>
+                <div class="form_section">
+                  <legend class="legend_style">Доп. информация</legend>
+                  <label>
+                    <textarea
+                      placeholder="Что ещё Вы бы хотели рассказать" class="input_textarea"></textarea>
+                  </label>
+                  <ul style="display: flex; list-style: none;">
+                    <li><input name="radio" type="radio">&nbsp тест radio&nbsp&nbsp</li>
+                    <li><input name="radio" type="radio">&nbsp тест radio&nbsp&nbsp</li>
+                    <li><input name="radio" type="radio">&nbsp тест radio&nbsp&nbsp</li>
+                  </ul>
+                </div>
+              </fieldset>
+              <fieldset>
+                <div class="form_section">
+                  <!--<legend class="legend_style">Отправить\Сброс</legend>-->
+                    <div style="display: flex;">
+                      <div class="form_button">
+                        <p>Отправить</p>
+                        <input
+                        type="image"
+                        value="SEND"
+                        src="img/send.JPG"
+                        class="contacts_TwoBlocks_form_submit"/>
+                      </div>
+                      <div class="form_button">
+                        <p>Сброс</p>
+                        <input
+                        type="reset"
+                        value="RESET"
+                        class="contacts_TwoBlocks_form_submit"/>
+                      </div>
+                    </div>
+                  <div style="display: flex">
+                    <label>Пожертвовано на поддержание штанов:&nbsp&nbsp;<meter min="0" max="100" value="40">40%</meter></label>
+                    <span>&nbsp&nbsp руб.</span></div>
+                  <div style="display: flex">
+                    <label>сайт в процессе разработки! Уже готово:&nbsp&nbsp<progress value="0.1"></progress></label>
+                    <span>&nbsp&nbsp %.</span></div>
+                  </div>
+                </div>
+              </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>
+        <div class="contacts">
+          <div class="contacts_header">Contacts</div> 
+          <div class="contacts_TwoBlocks">
+            <nav>
+              <form action="#" class="contacts_TwoBlocks_form">
+                <fieldset>
+                  <input type="text" placeholder="Your name:" required class="input"/>
+                  <input type="email" placeholder="Your email:" required class="input"/>
+                </fieldset>
+                <fieldset>
+                  <textarea
+                  placeholder="Your message:" class="input_textarea"
+                ></textarea>
+                </fieldset>
+                <input
+                  type="submit"
+                  value="SEND"
+                  class="contacts_TwoBlocks_form_submit"
+                />
+              </form>
+            </nav>
+            <div class="contacts_TwoBlocks_listAndIcons">
+              <nav>
+                <ul class="contacts_TwoBlocks_listAndIcons_ul">
+                <li class="contacts_TwoBlocks_listAndIcons_ul_text">
+                  <img
+                    src="img/skype icon.svg"
+                    alt="skype icon"
+                    class="contacts_TwoBlocks_listAndIcons_ul_icon"
+                  />
+                  here_your_login_skype
+                </li>
+                <li class="contacts_TwoBlocks_listAndIcons_ul_text">
+                  <img
+                    src="img/icq icon.svg"
+                    alt="icq icon"
+                    class="contacts_TwoBlocks_listAndIcons_ul_icon"
+                  />279679659
+                </li>
+                <li class="contacts_TwoBlocks_listAndIcons_ul_text">
+                  <img
+                    src="img/email icon.svg"
+                    alt="email icon"
+                    class="contacts_TwoBlocks_listAndIcons_ul_icon"
+                  />psdhtmlcss@mail.ru
+                </li>
+                <li class="contacts_TwoBlocks_listAndIcons_ul_text">
+                  <img
+                    src="img/bx_bx-phone.svg"
+                    alt="phone icon"
+                    class="contacts_TwoBlocks_listAndIcons_ul_icon"
+                  />80 00 4568 55 55
+                </li>
+                </ul>
+              </nav>
+              <nav>
+                <div class="contacts_TwoBlocks_listAndIcons_icons">
+                  <img src="img/twitter.svg" alt="twitter logo" />
+                  <img src="img/vk.svg" alt="vkontakte logo" />
+                  <img src="img/google.svg" alt="google logo" />
+                  <img src="img/facebook.svg" alt="facebook logo" />
+                </div>
+              </nav>
+          </div>
+          </div>
+        </div>
+        <div class="copyR">Copyright © 2014 Product name · PSD HTML CSS</div>
+      </footer>
+    </div>
+  </body>
+</html>
