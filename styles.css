@@ -1,10 +1,15 @@
+body {
+  background-image: url(img/wallP.jpg);
+  background-repeat:round;
+}
+
 * {
   margin: 0 auto;
   padding: 0;
 }
 
 .project {
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   max-width: 1272px;
@@ -12,7 +17,7 @@
 }
 
 .top {
-  flex-grow: 1;
+  flex: 1 0 auto;
 }
 
 .topBlock {
@@ -414,6 +419,10 @@
   color: #445161;
 }
 
+.footer {
+  flex: 0 0 auto;
+}
+
 .contacts {
   max-width: 1272px;
   max-height: 509px;
@@ -489,6 +498,22 @@
 
 .contacts_TwoBlocks_listAndIcons_icons {
   display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.socIcon {
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #445162;
+  display: block;
+}
+
+.fab {
+  font-size:40px;
+  margin: 0 3px;
 }
 
 .copyR {
@@ -555,4 +580,36 @@
   display: flex;
   flex-direction: column;
   margin: 0 50px;
+}
+
+.backImage1 {
+  background-image: url(img/back1.jpg);
+}
+.backImage2 {
+  background-image: url(img/back2.jpg);
+}
+.backImage3 {
+  background-image: url(img/back3.jpg);
+}
+.backImage4 {
+  background-image: url(img/back4.jpg);
+}
+.backImage5 {
+  background-image: url(img/back5.jpg);
+}
+
+.backP {
+  color: #445162;
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+
+.backInputText {
+  color: #010f22;
+  background-color: rgb(43, 73, 75);
+  border-radius: 5px;
+}
+
+.fa-facebook-square {
+  size
 }
